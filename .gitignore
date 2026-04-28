@@ -1,0 +1,11 @@
+.venv
+__pycache__
+*.pyc
+.env
+.python-version
+*.wav
+*.mp3
+*.ogg
+models/
+*.onnx
+*.onnx.json
