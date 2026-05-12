@@ -134,5 +134,5 @@ TTS test (Piper):
 
 - macOS with Apple Silicon (M1/M2/M3/M4)
 - Ollama with LLaVA model pulled
-- ffmpeg (for Whisper audio decoding)
+- ffmpeg (`brew install ffmpeg`) — Required by Whisper. Whisper doesn't read audio formats directly. It uses ffmpeg under the hood to decode audio files (MP3, WAV, M4A, etc.), resample them to 16kHz mono, and convert to raw PCM samples that the neural network can process. Without ffmpeg, audio transcription will fail.
 - Python 3.12+
